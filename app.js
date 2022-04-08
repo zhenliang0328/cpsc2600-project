@@ -4,7 +4,7 @@ const app = express();
 const connection = require('./db/connection.js');
 
 connection.once('open', () => {
-	const server = app.listen(process.env.PORT || 8080, () => {
+	const server = app.listen(process.env.PORT, () => {
 		console.log("Connected and listening");
 	});
 });
