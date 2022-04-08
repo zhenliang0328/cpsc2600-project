@@ -96,11 +96,11 @@ const MealPlanFood = props => {
 				</b>
 				<br /></div>
 			<div className="nutrition">
-				Fat: <span name="fat" value={convertBySize(props.food._food.fat)}>{convertBySize(props.food._food.fat)}</span>g<br />
-				Carb: <span name="carb" value={convertBySize(props.food._food.carb)}>{convertBySize(props.food._food.carb)}</span>g<br />
-				Protein: <span name="protein" value={convertBySize(props.food._food.protein)}>{convertBySize(props.food._food.protein)}</span>g<br />
+				<p>Fat: <span name="fat" value={convertBySize(props.food._food.fat)}>{convertBySize(props.food._food.fat)}</span>g</p>
+				<p>Carb: <span name="carb" value={convertBySize(props.food._food.carb)}>{convertBySize(props.food._food.carb)}</span>g</p>
+				<p>Protein: <span name="protein" value={convertBySize(props.food._food.protein)}>{convertBySize(props.food._food.protein)}</span>g</p>
 				<hr />
-				Calories: <span name="cal" value={convertBySize(calories(props.food._food.fat, props.food._food.carb, props.food._food.protein))}>{convertBySize(calories(props.food._food.fat, props.food._food.carb, props.food._food.protein))}</span>K<br />
+				<p>Calories: <span name="cal" value={convertBySize(calories(props.food._food.fat, props.food._food.carb, props.food._food.protein))}>{convertBySize(calories(props.food._food.fat, props.food._food.carb, props.food._food.protein))}</span>K</p>
 			</div>
 		</div>
 	</>
